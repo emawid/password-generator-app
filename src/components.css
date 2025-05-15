@@ -53,7 +53,7 @@ input {
   justify-content: space-between;
 }
 
-.output-character-selection p:first-child {
+.output-character-selection label {
   color: var(--color-white);
 }
 
@@ -277,6 +277,9 @@ li {
 }
 
 @media (min-width: 768px) {
+  h1 {
+    margin-bottom: 32px;
+  }
   .btn {
     width: 476px;
   }
