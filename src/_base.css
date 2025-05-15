@@ -1,0 +1,69 @@
+:root {
+  /* White and Black */
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  /* Grey */
+  --color-grey-950: #08070b;
+  --color-grey-900: #14131b;
+  --color-grey-850: #18171f;
+  --color-grey-800: #24232c;
+  --color-grey-700: #54535b;
+  --color-grey-600: #817d92;
+  --color-grey-200: #e6e5ea;
+
+  /* Green */
+  --color-green-200: #a4ffaf;
+
+  /* Yellow */
+  --color-yellow-300: #f8cd65;
+
+  /* Orange */
+  --color-orange-400: #fb7c58;
+
+  /* Red */
+  --color-red-500: #f64a4a;
+
+  /* Gradient */
+  --color-gradient-1-start: #14131b;
+  --color-gradient-1-end: #08070b;
+
+  /* SVG fill colors */
+  --fill-color-copy: var(--color-green-200);
+  --fill-color-copy-hover: var(--color-white);
+  --fill-color-arrow-right: var(--color-grey-950);
+  --fill-color-arrow-right-hover: var(--color-green-200);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: var(--color-grey-950);
+}
+
+body {
+  font-family: 'JetBrains Mono', monospace, system-ui;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  height: 100dvh;
+}
+
+/* CSS reset for form elements */
+
+input,
+textarea,
+button,
+select {
+  font: inherit;
+}
+
+/* CSS reset for button element */
+
+.ax-button {
+  all: unset;
+  outline: revert;
+  box-sizing: border-box;
+}

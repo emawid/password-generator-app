@@ -1,0 +1,31 @@
+.text-preset-1 {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: bold;
+  font-size: 2rem; /* 32px / 16 = 2rem */
+  line-height: 2.625rem; /* 42px / 16 = 2.625rem */
+  letter-spacing: 0;
+}
+
+.text-preset-2 {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: bold;
+  font-size: 1.5rem; /* 24px / 16 = 1.5rem */
+  line-height: 2rem; /* 32px / 16 = 2rem */
+  letter-spacing: 0;
+}
+
+.text-preset-3 {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: bold;
+  font-size: 1.125rem; /* 18px / 16 = 1.125rem */
+  line-height: 1.5rem; /* 24px / 16 = 1.5rem */
+  letter-spacing: 0;
+}
+
+.text-preset-4 {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: bold;
+  font-size: 1rem; /* 16px / 16 = 1rem */
+  line-height: 1.25rem; /* 20px / 16 = 1.25rem */
+  letter-spacing: 0;
+}

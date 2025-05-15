@@ -1,0 +1,314 @@
+/* Layout */
+
+h1 {
+  margin-top: 0px;
+  margin-bottom: 16px;
+  place-self: center;
+  color: var(--color-grey-600);
+}
+
+p,
+input {
+  margin: 0;
+}
+
+.output-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  background-color: var(--color-grey-800);
+  padding: 16px;
+  max-width: 343px;
+}
+
+#output-password {
+  color: var(--color-grey-700);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#output-message {
+  color: var(--color-green-200);
+}
+
+.output-copy-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+#copy-icon {
+  fill: var(--fill-color-copy);
+}
+
+#copy-icon:hover {
+  fill: var(--fill-color-copy-hover);
+}
+
+.output-character-selection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.output-character-selection p:first-child {
+  color: var(--color-white);
+}
+
+.output-character-selection p:last-child {
+  color: var(--color-green-200);
+}
+
+.range-select-character {
+  width: 100%;
+}
+
+.user-input-container {
+  background-color: var(--color-grey-800);
+  padding: 16px;
+}
+
+ul {
+  display: flex;
+  padding-left: 0;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 0;
+  margin-bottom: 32px;
+  list-style: none;
+  color: var(--color-white);
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tick-box {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--color-grey-200);
+}
+
+.checked {
+  background-color: var(--color-green-200);
+  background-image: url('./assets/images/icon-check.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.password-strength-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  background-color: var(--color-grey-850);
+  padding: 16px;
+}
+
+.password-strength-container > p {
+  color: var(--color-grey-600);
+}
+
+.password-strength {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: var(--color-grey-200);
+}
+
+.password-strength-bars {
+  display: flex;
+  gap: 8px;
+}
+
+.strength-bar {
+  width: 10px;
+  height: 28px;
+  border: 2px solid var(--color-grey-200);
+}
+
+/* .strength-bar:nth-child(4) {
+  background-color: initial;
+  border: 2px solid var(--color-grey-200);
+} */
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 311px;
+  height: 56px;
+  place-self: center;
+  background-color: var(--color-green-200);
+}
+
+.btn:hover {
+  background-color: initial;
+  border: 2px solid var(--color-green-200);
+  color: var(--color-green-200);
+}
+
+.btn #icon-arrow-right {
+  fill: var(--fill-color-arrow-right);
+}
+
+.btn:hover #icon-arrow-right {
+  fill: var(--fill-color-arrow-right-hover);
+}
+
+.btn-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.user-input-character-container {
+  margin-bottom: 32px;
+}
+
+.output-character-selection {
+  margin-bottom: 8px;
+  padding: 0 9x;
+}
+
+/* Reset the default appearance of the slider */
+#slider {
+  -webkit-appearance: none; /* Required for Chrome and Safari */
+  appearance: none; /* Ensures compatibility with modern browsers */
+  width: 100%; /* Ensure the slider spans the container */
+  height: 8px; /* Adjust the height of the track */
+  background: linear-gradient(
+    to right,
+    var(--color-green-200) 0%,
+    var(--color-green-200) 50%,
+    var(--color-grey-850) 50%,
+    var(--color-grey-850) 100%
+  ); /* Two colors for the track */
+  border-radius: 4px; /* Optional: Rounded edges for the track */
+  outline: none; /* Remove focus outline */
+  transition: background 0.3s ease;
+}
+
+/* Style for the slider track */
+#slider::-webkit-slider-runnable-track {
+  height: 8px;
+  border-radius: 0px;
+}
+
+#slider::-moz-range-track {
+  height: 8px;
+  border-radius: 0px;
+}
+
+/* Style for the slider thumb */
+
+#slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Required for Chrome and Safari */
+  appearance: none; /* Ensures compatibility with modern browsers */
+  width: 28px; /* Thumb width */
+  height: 28px; /* Thumb height */
+  background-color: var(--color-white);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -10px; /* Center the thumb over the track (40px - 8px) / 2 = 16px */
+}
+
+#slider::-webkit-slider-thumb:hover {
+  background-color: var(--color-grey-800); /* Change thumb color on hover */
+  border: 2px solid var(--color-green-200); /* Optional: Add a border on hover */
+}
+
+#slider::-moz-range-thumb {
+  appearance: none; /* Ensures compatibility with modern browsers */
+  width: 28px; /* Thumb width */
+  height: 28px; /* Thumb height */
+  background-color: var(--color-white);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -10px; /* Center the thumb over the track */
+}
+
+#slider::-moz-range-thumb:hover {
+  background-color: var(--color-grey-800); /* Change thumb color on hover */
+  border: 2px solid var(--color-green-200); /* Optional: Add a border on hover */
+}
+
+/* Custom checkbox */
+
+/* Hide default checkbox */
+.custom-checkbox input[type='checkbox'] {
+  display: none;
+}
+
+/* Style for the custom checkbox container */
+.custom-checkbox {
+  display: inline-flex;
+  gap: 16px;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* Style for the custom checkmark */
+.custom-checkbox .checkmark {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--color-grey-200);
+
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.custom-checkbox .checkmark:hover {
+  border-color: var(--color-green-200);
+}
+
+/* Add the SVG as the background when checked */
+.custom-checkbox input[type='checkbox']:checked + .checkmark {
+  background-image: url('./assets/images/icon-check.svg');
+  background-color: var(--color-green-200);
+  border: none;
+}
+
+@media (min-width: 768px) {
+  .btn {
+    width: 476px;
+  }
+
+  .user-input-container {
+    padding: 24px 32px;
+  }
+
+  .output-container {
+    margin-bottom: 24px;
+    max-width: 540px;
+    padding: 16px 32px;
+  }
+
+  .output-character-selection {
+    margin-bottom: 16px;
+  }
+
+  .password-strength-container {
+    margin-bottom: 32px;
+  }
+
+  h1.text-preset-4,
+  .text-preset-3 {
+    font-size: 1.5rem;
+  }
+
+  .text-preset-4 {
+    font-size: 1.125rem;
+  }
+
+  .text-preset-2 {
+    font-size: 2rem;
+  }
+}
